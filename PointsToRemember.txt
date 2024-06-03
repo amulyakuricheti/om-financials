@@ -1,0 +1,9 @@
+showstring.nikecloud.com- for authentication
+
+Sterling-
+ It is a workflow defined means a pipeline. Pipeline is ntg but a momemnt of statuses.
+ moment of statuses happen there are  transaction involve means wr work is done.
+ After wrk is done, the document moves statusA to statusB.
+Work= that is upto us. what to write there what to execute there.
+ -> B/w the statuses there are transactions,convets from one status to another.
+->

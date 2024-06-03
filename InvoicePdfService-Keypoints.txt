@@ -1,0 +1,18 @@
+ConsumerInvoice(CI)/InvoicePdfService(IPS)
+----
+CI - from ci jso payload will get posted.
+
+ci to NSP(1)
+producer- kafka
+Sink -s3
+producer will be available in s3 bucket. 
+ 
+IPS is for only Europe, Japan
+invoicecompletion order - 
+
+there should be connected sink and it should be a connected s3 and we need to give bucket details(region,bucketname) and later NSP team create IAM role then we need to get that added.
+ (bucket details might be declared in code ISP code somewhere or check with srinivas).
+ 
+
+
+s3bucket- s3://nike-consumer-om-financial-test/nsp/orderevent/consumerinvoice/

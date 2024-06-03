@@ -1,0 +1,26 @@
+Consumer Invoice:
+Its not creating invoice-it will listen to invoice and enrich the payload and post to the downstream
+uuid - to post into further downstream.
+fulfillment Repo- when order is fulfilled with multiple lines,it doesn't necessary that all my lines should shipped with my shipment(may be using 2 lines- invoice get created).
+  my order number has multiple lines but only to identify my shipment - will call it as fr number.
+xsl- convert json to xml
+ we are moving from Pulse to NSP(Nike Space Prgram). Basically we are getting the invoice details from Pulse previously.
+===DOMS Functionality===
+ DOMS- Database Order Management System
+ Actual Invoice creation logic is in Doms - multiple trigger points will this invoice creation.
+ once the shipment is done,I'm gng to create an invoice and creating the amount for that order.
+ Once the shipment is created , invoice will create within DOMS.Once invoice is created, it will list out of the DOMS saying that invoice is created.with that we need some details, on which order invoice got created, shipment details,any giftcard added?
+ When it is posted in DOMS, it will be in a XML format.
+==Pulse===
+Commerce account is where our Pulse available. Pulse is a event management system which was developed by Nike long back. 
+Pulse is used to communicating between the systems which is deployed within commerce AWS account. 
+All the communications are in sterling Oms ie, DOMS. applications in commerce aws account is happening via this pulse.
+===consumer invoice===
+From pulse its first reaching to consumer invoice service. this is the first main server for invoices.
+In consumer invoice if I receive a payload, it wil be in XML format.All my cloud systems doesnt want that format, I need it in JSON format:
+   first I convert from XML to JSON.
+   After that I'll do enrichment calls.
+The data we receive from pulse will have ordernum,FR num(fulfillment Repo),shipment node number.
+If I want to get more details about FR num then I have to contact fulfillment Repo.
+If I want to get order level details then I've to do Order Repo call.
+If 

@@ -1,0 +1,17 @@
+https://vdi-cloud.nike.com/
+Kindly navigate to SNOW link https://niketech.service-now.com/nav_to.do?uri=%2Fincident.do%3Fsys_id%3D-1%26sysparm_query%3Dactive%253dtrue%26sysparm_stack%3Dincident_list.do%253fsysparm_query%253dactive%253dtrue%26sysparm_view%3D%26sysparm_view_forced%3Dtrue
+==================
+Github:
+https://confluence.nike.com/display/BAAT/GitHub+Enterprise+Cloud+FAQs
+ request access for in 
+app.ghec.nike-gc-tech
+app.ghec.nike-internal
+app.ghec.nike-internal-overflow
+app.ghec.nike-mp-va
+app.ghec.nike-platform-order-digital
+
+======
+start with creating the instance with a default private key.
+ then sign the private key to your computer, it will be helpful to save it in the ~/.ssh folder. 
+ Next, run chmod +400 <key-name >.
+ After that, depending on whether the EC2 instance is Ubuntu or red hat, you’ll run ssh ec2-user@<ip> <private-key> or ssh kratos@<ip> <private-key>
